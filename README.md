@@ -1,6 +1,39 @@
-Project Title & AbstractTitle: Energy Consumption Prediction in Smart Buildings using Optimized Machine Learning.  Abstract: Briefly summarize that this project addresses global energy concerns by forecasting building energy usage. Mention that the framework uses the ASHRAE dataset and achieves high accuracy by integrating weather and temporal features.  
-Key Objectives & ContributionsHighlight what makes this specific project better than existing studies:Diverse Building Coverage: Covers residential, commercial, industrial, and public service buildings.  Feature Engineering: Explicitly mention the inclusion of external factors like temperature, humidity, and wind speed, along with time-based variations (hourly/seasonal).  Optimized Performance: Highlight that the framework addresses "Incomplete Feature Integration" and "Computational Inefficiency" found in other research.  
-Methodology & DatasetDescribe the technical workflow so others can replicate your work:Dataset: Identify the ASHRAE Energy Dataset III as the source, noting it contains over 5 million rows of data.  Preprocessing: Mention removing high-missing-value features (like year_built) and standardizing data to improve model convergence.  Model Selection: List the three models used: XGBoost, Random Forest, and LSTM.  
-Experimental ResultsThis is the "proof" section of your README. Use a table to show off your findings:ModelMAERMSER2 ScoreXGBoost37.551120.9999Random Forest246.043630.9989LSTM0.08340.1264(Sequential Focus)Key Takeaway: Emphasize that XGBoost is the superior model for this task due to its high predictive accuracy and computational efficiency.  
-How to RunProvide the technical steps for your peers or recruiters:Clone the Repo: git clone [your-link]Install Requirements: pip install -r requirements.txt (This should include xgboost, pandas, scikit-learn, and tensorflow for the LSTM).  Run the Notebook: Execute the .ipynb file to see the data cleaning and model training in action.  
-Future WorkMentioning these points shows you have a long-term vision for the project:Integrating real-time prediction for dynamic monitoring.  Incorporating user behavior and occupancy patterns.  Exploring hybrid models like XGBoost combined with Bi-LSTM.
+**Energy Consumption Prediction in Diverse Smart Buildings**
+An Optimized Framework Using Machine Learning
+**1.	Project Overview**
+This project addresses the rising global concern of energy management in smart buildings. By leveraging the ASHRAE Energy Dataset III, this framework provides a scalable and accurate way to forecast energy consumption across diverse building types, including residential, commercial, and industrial sectors. 
+The core of this project is an optimized machine learning pipeline that integrates weather data and temporal trends to overcome common research gaps like inadequate datasets and poor feature integration. 
+
+**2.	Key Contributions**
+•	Scalable Framework: Designed to work across multiple building categories beyond    localized university datasets. 
+•	Feature Engineering: Incorporates critical variables such as temperature, humidity, and time-based variations (hourly/seasonal). 
+•	Computational Efficiency: Uses optimized gradient boosting to achieve high accuracy with lower resource requirements than deep learning models. 
+
+**3. Methodology**
+•	Dataset: ASHRAE Energy Dataset III (over 5 million rows with 12 key features). 
+•	Preprocessing:
+•	**Models Used**: XGBoost, Random Forest, and Long Short-Term Memory (LSTM). 
+
+**4.	Performance Results**
+The models were evaluated using MAE, RMSE, and R2 scores. XGBoost emerged as the superior model. 
+
+**Model	        MAE    	RMSE	     R2 Score**
+XGBoost	        37.55	  112        	0.9999
+Random Forest	  246.04	363	        0.9989
+LSTM	          0.0834	0.1264	(Sequential Analysis)
+
+**5.	Future Scope**
+•	Integrating real-time prediction capabilities for dynamic monitoring. 
+•	Incorporating user behavior analysis and occupancy patterns. 
+•	Exploring hybrid models such as XGBoost + Bi-LSTM. 
+________________________________________
+**6.	How to Run**
+1.	Clone the repository:
+git clone [https://github.com/fahadtmalik-ctrl/-Energy-Consumption-Prediction.git](https://github.com/fahadtmalik-ctrl/-Energy-Consumption-Prediction.git)
+2.	Install dependencies:
+3.	pip install -r requirements.txt
+4.	Run the analysis:
+5.	Open the .ipynb file in VS Code or Jupyter and run all cells.
+
+
+________________________________________
